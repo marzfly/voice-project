@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOICE project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="../Presentation/style.css" type="text/css">-->
+
+    <style>
+        body{
+            padding: 20px;
+            padding-top: 0;
+            background:repeating-linear-gradient(
+                45deg,
+                pink,
+                rgb(255, 144, 255) 10px,
+                rgb(255, 255, 123) 10px,
+                rgb(135, 135, 255) 10px
+            )
+        }
+
+        *{
+            font-family:'DotGothic16';
+        }
+        header{
+            font-family:'Silkscreen';
+            text-align:center;
+            background-image:linear-gradient(to bottom, pink, lightblue);
+            border: purple 5px double;
+            margin-bottom:20px;
+            padding-top: 0;
+        }
+        h1{
+            color:blueviolet;
+            padding-bottom:0;
+            margin-bottom:0;
+            font-size:500%;
+            padding-top:0;
+            text-shadow:3px 3px rgb(51, 26, 148);
+        }
+        h2{
+            padding-top:0;
+            margin-top:0;
+            padding-bottom:20px;
+            color: rgb(255, 35, 145);
+        }
+        p{
+            color:blueviolet;
+        }
+        img{
+            width:250px;
+            height: 250px;
+            border: rgb(142, 72, 255) 4px solid;
+            border-bottom: rgb(142, 72, 255) 18px solid;
+            filter:grayscale(100%);
+            transition:0.4s;
+        }
+        #zhongwen{
+            font-size:125%;
+            font-weight:bold;
+            color:rgba(187, 155, 217, 0.49)
+        }
+        img:hover{
+            transform: rotate(-8deg);
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.251);
+            cursor:pointer;
+            filter:grayscale(0%);
+        }
+
+        .board{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            gap: 20px;
+            align-items: center;
+            padding: 15px;
+            border: rgb(200, 129, 195) 2px double;
+            border-radius: 20px;
+            background-color: rgb(221, 247, 255);
+            box-shadow:4px 4px rgb(255, 121, 255);
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content:center;
+        }
+        #bottom-text{
+            margin:75px;
+            border:rgb(156, 156, 255) 4px dashed;
+            padding: 10px;
+            background:rgb(236, 192, 255);
+            border-radius: 20px;
+            box-shadow:3px 3px 8px rgb(255, 34, 71);
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>http://voiceproject.org</h1>
+        <h2>. ݁₊ ⊹ . ݁˖ . ݁ a coragem realmente é a ausência do medo? . ݁₊ ⊹ . ݁˖ . ݁</h2>
+    </header>
+    <div id="container">
+        <div class="board" id="board1">
+            <p id="p_1">O mundo todo aplaude aqueles que se mantém irreversíveis 
+                diante da maior das catástrofes. Mas será que isso não tira 
+                um pouquinho do gosto de ser humano?
+            </p>
+            <img class="polaroid" id="pola1" src="../Presentation/img1.png">
+            <p id="zhongwen">我喜欢猫，因为它们很可爱。猫喜欢睡觉，也喜欢玩球。它们有不同的颜色，比如白色、黑色和橙色。猫喜欢在阳光下睡觉。有些猫喜欢爬树。( ˃`⩌´˂ )</p>
+        </div>
+        <div class="board" id="board2">
+            <img class="polaroid" id="pola2" src="../Presentation/img2.jpeg">
+            <p>Em um mundo solitário, seja sua própria companhia.</p>
+            <p id="zhongwen">猫是一种很可爱的动物。它们喜欢睡觉、玩耍和吃鱼。猫有两只耳朵、四条腿和一条尾巴。
+                有些猫喜欢和人一起玩，有些猫喜欢一个人待着。猫的眼睛很漂亮，晚上也能看得很清楚。
+                很多人喜欢养猫，因为猫很有趣，也很可爱。</p>
+        </div>
+        <div class="board" id="board3">
+            <img class="polaroid" id="pola3" src="../Presentation/img3.jpeg">
+            <p>Sua dor vai acabar.</p>
+            <img class="polaroid" id="pola4" src="../Presentation/img4.jpeg">
+        </div>
+    </div>
+    <div id="bottom-text">
+        <p id="introduction">Alice sempre viveu com muito, muito medo. Um medo terrível, que se esgueira pelas frestas da porta quando você mal sabe o que está acontecendo ao seu redor.
+            Na adolescência, pouco mudou para a percepção dos mais velhos o seu diagnóstico de ansiedade social - o sofrimento, intenso e doloroso, nunca foi algo a se admitir
+            ou proteger. Vinte voltas em torno do Sol mal mudaram a sua perspectiva de um mundo cinzento, mas de vez em quando rios de cor e luz entravam na sua vida com a presença
+            de sua irmã mais nova Helena. Quando Helena, sua razão de viver, desaparece, Alice embarca numa jornada de aprendizado e autoconhecimento para trazê-la de volta para casa em 
+            segurança. É imprescindível que Alice aprenda lições valiosas no caminho para a liberdade e bem-estar de Helena.
+        </p>
+        <h4>Introdução ao projeto</h4>
+        <p>Este projeto foi desenvolvido para fins de obtenção de nota para a disciplina de Projeto e Engenharia de Software.</p>
+        <p>Utilizando ferramentas como C#, Unity, e unindo o design e a contação de histórias à programação, buscamos trazer uma reflexão singela sobre medo, amizade e devoção.</p>
+        <h4>Agradecimentos</h4>
+        <p>Às integrantes, Gabrielly, Thaís e Mariana, por sua colaboração imprescindível para o andamento do projeto apesar dos desafios, que enfrentaremos sempre juntas!</p>
+        <p>A.D.A., &copy; nov 2026</p>
+        <p>Una Contagem 2026.2 - 2° período Ciência da Computação</p>
+        <br>
+        <p>made with HTML, CSS and lots of love <3</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body{
+    padding: 20px;
+    padding-top: 0;
+    background:repeating-linear-gradient(
+        45deg,
+        pink,
+        rgb(255, 144, 255) 10px,
+        rgb(255, 255, 123) 10px,
+        rgb(135, 135, 255) 10px
+    )
+}
+
+*{
+    font-family:'DotGothic16';
+}
+header{
+    font-family:'Silkscreen';
+    text-align:center;
+    background-image:linear-gradient(to bottom, pink, lightblue);
+    border: purple 5px double;
+    margin-bottom:20px;
+    padding-top: 0;
+}
+h1{
+    color:blueviolet;
+    padding-bottom:0;
+    margin-bottom:0;
+    font-size:500%;
+    padding-top:0;
+    text-shadow:3px 3px rgb(51, 26, 148);
+}
+h2{
+    padding-top:0;
+    margin-top:0;
+    padding-bottom:20px;
+    color: rgb(255, 35, 145);
+}
+p{
+    color:blueviolet;
+}
+img{
+    width:250px;
+    height: 250px;
+    border: rgb(142, 72, 255) 4px solid;
+    border-bottom: rgb(142, 72, 255) 18px solid;
+    filter:grayscale(100%);
+    transition:0.4s;
+}
+#zhongwen{
+    font-size:125%;
+    font-weight:bold;
+    color:rgba(187, 155, 217, 0.49)
+}
+img:hover{
+    transform: rotate(-8deg);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.251);
+    cursor:pointer;
+    filter:grayscale(0%);
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+    align-items: center;
+    padding: 15px;
+    border: rgb(200, 129, 195) 2px double;
+    border-radius: 20px;
+    background-color: rgb(221, 247, 255);
+    box-shadow:4px 4px rgb(255, 121, 255);
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:center;
+}
+#bottom-text{
+    margin:75px;
+    border:rgb(156, 156, 255) 4px dashed;
+    padding: 10px;
+    background:rgb(236, 192, 255);
+    border-radius: 20px;
+    box-shadow:3px 3px 8px rgb(255, 34, 71);
+}
